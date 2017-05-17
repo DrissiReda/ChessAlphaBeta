@@ -93,6 +93,7 @@ public class UserInterface extends JPanel implements MouseListener, MouseMotionL
                     AlphaBetaChess.flipBoard();
                     AlphaBetaChess.makeMove(AlphaBetaChess.alphaBeta(AlphaBetaChess.globalDepth, 1000000, -1000000, "", 0));
                     AlphaBetaChess.flipBoard();
+                    System.out.println(userPosibilities);
                     repaint();
                 }
             }
@@ -101,7 +102,11 @@ public class UserInterface extends JPanel implements MouseListener, MouseMotionL
     @Override
     public void mouseClicked(MouseEvent e) {}
     @Override
-    public void mouseDragged(MouseEvent e) {}
+    public void mouseDragged(MouseEvent e) {
+        /*mouseX=e.getX();
+        mouseY=e.getY();
+        repaint();*/
+    }
     @Override
     public void mouseEntered(MouseEvent e) {}
     @Override

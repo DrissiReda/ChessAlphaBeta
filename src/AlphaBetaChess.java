@@ -43,7 +43,7 @@ public class AlphaBetaChess {
         f.setVisible(true);
         System.out.println(sortMoves(posibleMoves()));
         Object[] option={"Computer","Human"};
-        humanAsWhite=JOptionPane.showOptionDialog(null, "Who should play as white?", "ABC Options", JOptionPane.YES_NO_OPTION,
+        humanAsWhite=JOptionPane.showOptionDialog(null, "Who should play first?", "Prompt", JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE, null, option, option[1]);
         if (humanAsWhite==0) {
             long startTime=System.currentTimeMillis();
