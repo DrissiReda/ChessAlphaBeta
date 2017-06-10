@@ -10,3 +10,5 @@ gen
 .idea/modules.xml
 .idea/workspace.xml
 out/artifacts/
+/chessAlphaBeta.iml
+/out/
